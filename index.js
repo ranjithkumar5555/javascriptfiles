@@ -4,7 +4,7 @@ fetch('http://localhost:5000/')
   .then((data) =>{
 let apiData = data.data
 let navMenu = ""
-let section=""
+let sectionpart=""
 
  apiData.header.navMenu.map((nav,index)=>{
    navMenu = navMenu + `<div class="menu" >Menu-${index+1}</div>`
@@ -13,11 +13,14 @@ let header = document.getElementById("header")
 let headerleft = document.getElementById("headerleft")
 let brandNameDiv = `<h1>${ apiData.header.brandName}<h1>`
 let headerBrand = document.getElementById("headerlogo")
+let section = document.getElementById("section")
 headerBrand.innerHTML = brandNameDiv
 headerleft.innerHTML = navMenu
 header.style.background = apiData.header.background
 header.style.height = apiData.header.height
 console.log(navMenu)
+
+
 
 
   } );
