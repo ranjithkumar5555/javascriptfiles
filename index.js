@@ -4,7 +4,7 @@ fetch('http://localhost:5000/')
   .then((data) =>{
 let apiData = data.data
 let navMenu = ""
-let sectionpart=""
+let herosection=""
 
  apiData.header.navMenu.map((nav,index)=>{
    navMenu = navMenu + `<div class="menu" >Menu-${index+1}</div>`
