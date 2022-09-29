@@ -14,6 +14,7 @@ let headerleft = document.getElementById("headerleft")
 let brandNameDiv = `<h1>${ apiData.header.brandName}<h1>`
 let headerBrand = document.getElementById("headerlogo")
 let section = document.getElementById("section")
+let footer = document.getElementById("footer")
 headerBrand.innerHTML = brandNameDiv
 headerleft.innerHTML = navMenu
 header.style.background = apiData.header.background
